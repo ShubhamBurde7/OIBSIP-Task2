@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #292929;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #1C1C1C;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(175, 52, 175);
+    font-size: 1.02rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0;
+    align-items: center;
+}
+
+.firstsection>div {
+    width: 30%
+}
+
+.leftsection {
+    font-size: 3rem;
+}
+
+.leftsection .button {
+    font-size: 2.5rem;
+    padding-left: 140px;
+}
+
+.leftsection button {
+    background: linear-gradient(45deg, #ff6b6b, #5564e9);
+    /* Gradient background */
+    color: #fff;
+    /* White text color */
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    /* Increased border-radius for a rounded shape */
+    font-size: 18px;
+    /* Slightly larger font size */
+    padding: 12px 22px;
+    /* Increased padding for a larger button */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.leftsection button:hover {
+    background: linear-gradient(45deg, #ff8c8c, #7d8bff);
+    /* Darker gradient on hover */
+    transform: scale(1.05);
+    /* Scale up slightly on hover */
+}
+
+.leftsection button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    /* Overlay with a subtle white color */
+    z-index: -1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.leftsection button:hover::before {
+    opacity: 0;
+    /* Hide the overlay on hover */
+}
+
+.leftsection button a {
+    text-decoration: none;
+    color: inherit;
+    /* Inherit color from the button */
+}
+
+
+
+
+.rightsection img {
+    width: 80%;
+    margin: 35px 0;
+    border-radius: 20px;
+}
+
+#element {
+    color: blueviolet;
+}
+
+.secondsection {
+    max-width: 73vw;
+    margin: auto;
+    height: 75vh;
+}
+
+main hr {
+    border: 0;
+    background: rgb(234, 207, 207);
+    height: 1px;
+    margin: 40px 80px;
+}
+
+.hero-social {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.hero-social a {
+    color: #eee;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.hero-social a:hover {
+    font-size: 3.2rem;
+    color: blueviolet;
+    transition: 0.1s;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: .8;
+    color: violet;
+    position: relative;
+    margin-bottom: 70px;
+    padding-bottom: 40px;
+}
+
+/* -------------------------- Work Experience -------------------------------*/
+.secondsection .box {
+    background: white;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 180px;
+}
+
+.image-top {
+    width: 85px;
+    position: relative;
+    top: -54px;
+    left: -42px;
+    border-radius: 4px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 55px;
+    width: 300px;
+    left: -140px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 71px;
+    color: gray;
+    width: 249px;
+    font-size: 15px;
+    left: -120px;
+    text-align: center;
+}
+
+.image-top-1 {
+    width: 80px;
+    position: relative;
+    top: -58px;
+    left: -40px;
+    border-radius: 4px;
+}
+
+.vertical-title-1 {
+    position: relative;
+    top: 43px;
+    width: 300px;
+    left: -140px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.vertical-desc-1 {
+    position: relative;
+    top: 60px;
+    color: gray;
+    width: 249px;
+    font-size: 15px;
+    left: -120px;
+    text-align: center;
+}
+
+.vertical-desc-2 {
+    position: relative;
+    top: 60px;
+    color: gray;
+    width: 300px;
+    font-size: 15px;
+    left: -140px;
+    text-align: center;
+}
+
+/* -------------------------- Project Section -------------------------------*/
+.thirdsection {
+    max-width: 73vw;
+    margin: auto;
+    height: 90vw;
+
+}
+
+.project-section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: .8;
+    color: violet;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+.project-container {
+    align-items: center;
+    column-gap: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.project-content p {
+    margin: 20px 0 15px;
+}
+
+.project-sub-description {
+    color: gray;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.projects-image img {
+    position: absolute;
+    height: 300px;
+    margin-left: 16%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* Remove any default inline styling */
+    
+    /* Center the image horizontally within its container */
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
+    /* Add a smooth transition effect and delay visibility */
+}
+.projects-image-1 img {
+    position: absolute;
+    height: 300px;
+    margin-left: 16%;
+    margin-top: 25%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* Remove any default inline styling */
+    
+    /* Center the image horizontally within its container */
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
+    /* Add a smooth transition effect and delay visibility */
+}
+.projects-image-2 img {
+    position: absolute;
+    height: 300px;
+    margin-left: 16%;
+    margin-top: 50%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* Remove any default inline styling */
+    
+    /* Center the image horizontally within its container */
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
+    /* Add a smooth transition effect and delay visibility */
+}
+
+
+.image-content {
+    width: 630px;
+    height: 300px;
+    margin-left: 16%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 6px;
+}
+.image-content-1 {
+    width: 630px;
+    height: 300px;
+    margin-left: 16%;
+    margin-top: 25%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 6px;
+}
+.image-content-2 {
+    width: 630px;
+    height: 295px;
+    margin-left: 16%;
+    margin-top: 50%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 6px;
+}
+
+.image-content:hover {
+    opacity: 1;
+    color: white;
+}
+.image-content> * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+.image-content:hover > * {
+    transform: translateY(0px);
+}
+
+.image-content-1:hover {
+    opacity: 1;
+    color: white;
+}
+.image-content-1> * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+.image-content-1:hover > * {
+    transform: translateY(0px);
+}
+
+.image-content-2:hover {
+    opacity: 1;
+    color: white;
+}
+.image-content-2> * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+.image-content-2:hover > * {
+    transform: translateY(0px);
+}
+
+.image-content-title {
+    font-size: 2rem;
+}
+.image-content-desc > img {
+    height: 40px;    
+    left: -18px;
+}
+
+/* -------------------------- Contact Section -------------------------------*/
+.contactsection {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+    text-transform: capitalize;
+    line-height: .8;
+    color: violet;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 180px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    font-size: medium;
+    color: #1d1c1c;
+    border-radius: 50px;
+}
+
+.contact-inputs:focus {
+    border: 4px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+    color: #484646;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    font-size: large;
+    color: #1d1c1c;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button:hover {
+    background: linear-gradient(270deg, #c77e4a, #e04360);
+    /* Darker gradient on hover */
+    transform: scale(1.05);
+    /* Scale up slightly on hover */
+}
+
+.contact-left button img {
+    height: 16px;
+}
+
+.contact-right img {
+    width: 500px;
+}
+
+@media (max-width: 800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+
+    .contact-right img {
+        display: none;
+    }
+}
+
+/* -------------------------- Footer Section -------------------------------*/
+footer {
+    background-color: #1C1C1C;
+}
+
+.footer {
+    display: flex;
+    padding: 25px 122px;
+    justify-content: space-evenly;
+}
+
+.section-title-1 {
+    text-align: center;
+
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: .8;
+    color: rgb(133, 25, 133);
+    position: relative;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 250px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}

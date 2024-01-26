@@ -1,0 +1,11 @@
+#name {
+    color: blueviolet;
+}
+
+.text-gray {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: gray;
+    padding-bottom: 10px;
+}
